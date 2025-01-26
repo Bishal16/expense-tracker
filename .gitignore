@@ -1,0 +1,5 @@
+expense-tracker-backend/target
+expense-tracker-backend/.idea
+.idea
+
+expense-tracker-frontend/node_modules
