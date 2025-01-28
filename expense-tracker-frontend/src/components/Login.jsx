@@ -20,7 +20,8 @@ const Login = () => {
         try {
             const response = await axios.post("http://localhost:5001/auth/login", credentials);
             localStorage.setItem("token", response.data);
-            alert("Login successful");
+            localStorage.setItem("email", credentials.email);
+            //alert("Login successful");
             navigate("/dashboard");
         } catch (error) {
             alert("Login failed. Please check your credentials.");

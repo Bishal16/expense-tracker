@@ -1,5 +1,6 @@
 package dev.mahathir.expencetracker.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Size;
@@ -27,6 +28,7 @@ public class User {
 
     @Column(nullable = false)
     @Size(min = 8, message = "password must be at least 8 characters long")
+    @JsonIgnore
     private String password;
 
 
